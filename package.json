@@ -1,0 +1,27 @@
+{
+  "name": "meditationApp",
+  "version": "0.0.1",
+  "description": "meditation app written in reactJS",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-browserify": "^0.5.0",
+    "gulp": "^3.8.8",
+    "reactify": "^0.14.0",
+    "react": "^0.11.2",
+    "gulp-concat": "^2.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "{"
+  },
+  "keywords": [
+    "\"name\":",
+    "\"reactApp\""
+  ],
+  "author": "\"version\": \"0.0.0\",",
+  "license": "  \"description\": \"test app for react\","
+}
