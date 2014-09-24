@@ -2,14 +2,14 @@
 var React 	= require('react');
 var Track 	= React.createClass({
 
-	// define expected properties within react class
+	// define expected properties
 	propTypes: {
 		
 		duration: 	React.PropTypes.number.isRequired,
 		data: 		React.PropTypes.array.isRequired
 	},
 
-	// set the default values of the expected properties
+	// set the default values
 	getDefaultProps:function(){
 		
 		return {  

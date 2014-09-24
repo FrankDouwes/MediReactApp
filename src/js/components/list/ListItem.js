@@ -5,7 +5,7 @@ var Track 	= require('../graph/Track');
 
 var ListItem = React.createClass({
 	
-	// define expected properties within react class
+	// define expected properties
 	propTypes: {
 		
 		title: 		React.PropTypes.string.isRequired,

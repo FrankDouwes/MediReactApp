@@ -2,14 +2,14 @@
 var React 		= require('react');
 var ImageIcon 	= React.createClass({
 	
-	// define expected properties within react class
+	// define expected properties
 	propTypes: {
 		
 		type: 		React.PropTypes.string.isRequired,
 		title: 		React.PropTypes.string,
 	},
 
-	// set the default values of the expected properties
+	// set the default values
 	getDefaultProps:function(){
 		
 		return {  
@@ -19,7 +19,7 @@ var ImageIcon 	= React.createClass({
 	},
 
 	render: function() {
-		
+
 		return (
 
 			<div className="icon col-xs-3 pull-right">

@@ -4,7 +4,7 @@ var ListItem  = require('../list/ListItem');
 
 var List = React.createClass({
     
-  // define expected properties within react class
+  // define expected properties
   propTypes: {
     
     title:          React.PropTypes.string.isRequired,
@@ -12,7 +12,7 @@ var List = React.createClass({
     pollInterval:   React.PropTypes.number
   },
 
-  // set the default values of the expected properties
+  // set the default values
   getDefaultProps:function(){
     
     return {  
