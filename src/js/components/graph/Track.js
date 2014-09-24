@@ -1,7 +1,6 @@
 /** @jsx React.DOM */
-var React = require('react');
-
-var Track = React.createClass({
+var React 	= require('react');
+var Track 	= React.createClass({
 
 	// define expected properties within react class
 	propTypes: {

@@ -1,21 +1,19 @@
 /** @jsx React.DOM */
-var List = require('../components/list/List');
-var React = require('react');
+var List 	= require('../components/list/List');
+var React 	= require('react');
 
-var Application =
-	
-	React.createClass({
+var Application = React.createClass({
 		
-		render:function(){
+	render:function(){
+		
+		return (
 			
-			return (
-				
-				<div id="application">
-					<h1>{this.props.title}</h1>
-					<List title="List" dataURL="temp/data.json" />
-				</div>
-			)
-		}
-  	});
+			<div id="application">
+				<h1>{this.props.title}</h1>
+				<List title="List" dataURL="temp/data.json" />
+			</div>
+		)
+	}
+});
 
 module.exports = Application;

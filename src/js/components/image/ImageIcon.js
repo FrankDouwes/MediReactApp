@@ -1,7 +1,6 @@
 /** @jsx React.DOM */
-var React = require('react');
-
-var ImageIcon = React.createClass({
+var React 		= require('react');
+var ImageIcon 	= React.createClass({
 	
 	// define expected properties within react class
 	propTypes: {
@@ -21,13 +20,9 @@ var ImageIcon = React.createClass({
 
 	render: function() {
 		
-		var style = {
-			float:'right'
-		};
-
 		return (
 
-			<div className="icon col-xs-3 pull-right" style={style}>
+			<div className="icon col-xs-3 pull-right">
 				<img src={this.props.type + ".svg"} />
 				<p>{this.props.title}</p>
 			</div>

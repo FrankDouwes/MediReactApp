@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
-var React 			= require('react');
-var Icon 			= require('../image/ImageIcon');
-var Track 		= require('../graph/Track');
+var React 	= require('react');
+var Icon 	= require('../image/ImageIcon');
+var Track 	= require('../graph/Track');
 
 var ListItem = React.createClass({
 	
