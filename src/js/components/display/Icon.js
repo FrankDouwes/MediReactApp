@@ -1,12 +1,12 @@
 /** @jsx React.DOM */
-var React 		= require('react');
-var ImageIcon 	= React.createClass({
+var React 	= require('react');
+
+var Icon = React.createClass({
 	
 	// define expected properties
 	propTypes: {
 		
 		type: 		React.PropTypes.string.isRequired,
-		title: 		React.PropTypes.string,
 	},
 
 	// set the default values
@@ -22,12 +22,9 @@ var ImageIcon 	= React.createClass({
 
 		return (
 
-			<div className="icon pull-right">
-				<img src={this.props.type + ".svg"} />
-				<p className="center-text">{this.props.title}</p>
-			</div>
+			<img src={"svg/" + this.props.type + ".svg"} width="64" height="64" className="icon pull-right vertical-align"/>
 		)
 	}
 });
 
-module.exports = ImageIcon;
+module.exports = Icon;

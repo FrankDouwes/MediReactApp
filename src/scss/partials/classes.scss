@@ -3,7 +3,7 @@
 
 $unit: 20px;
 
-.listItem {
+.listItem, .listAdvertisement {
 
 	margin-bottom: $unit;	
 
@@ -15,9 +15,16 @@ $unit: 20px;
 	}
 }
 
+.listAdvertisement {
+
+	background-color: #F9F9F9;
+	margin-bottom: $unit;
+	height: $unit * 3;
+}
+
 .icon {
 
-	padding-right: $unit;
+	padding-left: $unit;
 }
 
 .group:after {

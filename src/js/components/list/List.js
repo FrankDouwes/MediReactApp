@@ -1,6 +1,7 @@
 /** @jsx React.DOM */
-var React     = require('react');
-var ListItem  = require('../list/ListItem');
+var React               = require('react');
+var Session             = require('../list/ListItemSession');
+var Advertisement       = require('../list/ListItemAdvertisement');
 
 var List = React.createClass({
     
@@ -38,7 +39,7 @@ var List = React.createClass({
   // sets up the initial state (initialize)
   getInitialState: function() {
     
-    return {data: []};
+    return {data:[]};
   },
 
   // runs when component is rendered
@@ -54,8 +55,16 @@ var List = React.createClass({
     // for loop
     var listItems = this.state.data.map(function (listItem) {
       
-      return ( <ListItem title={listItem.title} session={listItem.session} duration={listItem.duration} />); 
-    
+      if (listItem.type == "session") {
+
+        return ( <Session key={listItem.id} title={listItem.title} session={listItem.session} label={listItem.label} duration={listItem.duration} />); 
+      }
+
+      else {
+
+        return ( <Advertisement key={listItem.id} data={listItem.data}/>); 
+      }
+
     });
       
     return (

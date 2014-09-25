@@ -1,6 +1,7 @@
 /** @jsx React.DOM */
 var React 	= require('react');
-var Track 	= React.createClass({
+
+var Track = React.createClass({
 
 	// define expected properties
 	propTypes: {
@@ -33,7 +34,8 @@ var Track 	= React.createClass({
   				float: 'left'
 			};
 
-      		return ( <div style={style} className={"background-" + cell.color}></div>); 
+      		return ( <div style={style} key={i} className={"background-" + cell.color}></div>);
+
     	}, this);
 
 		return (

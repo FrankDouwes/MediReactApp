@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
 var React 	= require('react');
-var Icon 	= require('../image/ImageIcon');
-var Track 	= require('../graph/Track');
+var Icon 	= require('../display/Icon');
+var Track 	= require('../display/Track');
 
 var ListItem = React.createClass({
 	
@@ -18,9 +18,8 @@ var ListItem = React.createClass({
 		return (
 
 			<li className="listItem list-group-item">
-				<Icon type="test" title="test1" />
-				<Icon type="test" title="test2" />
-				<Icon type="test" title="test3" />
+				<Icon type="audio" />
+				<Icon type="heart" />
 				<h3 className="">{this.props.title}</h3>
 				<Track data={this.props.session.track} duration={this.props.duration} />
 			</li>
