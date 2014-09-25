@@ -1,0 +1,27 @@
+/* CLASSES */
+/* ===== ===== ===== ===== ===== */
+
+$unit: 20px;
+
+.listItem {
+
+	margin-bottom: $unit;	
+
+	.track {
+
+		height: $unit / 2;
+		margin-top: $unit;
+		margin-bottom: -($unit / 2);
+	}
+}
+
+.icon {
+
+	padding-right: $unit;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

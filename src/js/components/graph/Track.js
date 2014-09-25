@@ -26,19 +26,19 @@ var Track 	= React.createClass({
 			var cellWidthPerc = (cell.duration / this.props.duration) * 100;
 
 			var style = {
-  				backgroundColor: 'red',
   				width: cellWidthPerc + '%',
+  				height: '100%',
   				padding: 0,
   				margin: 0,
-  				display: 'inline-block',
+  				float: 'left'
 			};
 
-      		return ( <div style={style} >cell</div>); 
+      		return ( <div style={style} className={"background-" + cell.color}></div>); 
     	}, this);
 
 		return (
 
-			<div className="track row">
+			<div className="track row group">
 				{cells}
 			</div>
 		)

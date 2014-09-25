@@ -61,7 +61,7 @@ var List = React.createClass({
     return (
       <div id="list">
         <h2>{this.props.title}</h2>
-          <ol id="listItems" className="list-unstyled">
+          <ol id="listItems" className="list-group">
             {listItems}
           </ol>
         </div>

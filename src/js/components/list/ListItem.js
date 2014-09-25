@@ -17,11 +17,11 @@ var ListItem = React.createClass({
 
 		return (
 
-			<li className="listItem col-xs-12">
-				<div className="row">
-					<Icon type="test" title="test test" />
-					<h3 className="col-xs-9">{this.props.title}</h3>
-				</div>
+			<li className="listItem list-group-item">
+				<Icon type="test" title="test1" />
+				<Icon type="test" title="test2" />
+				<Icon type="test" title="test3" />
+				<h3 className="">{this.props.title}</h3>
 				<Track data={this.props.session.track} duration={this.props.duration} />
 			</li>
 		)

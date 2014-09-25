@@ -1,0 +1,19 @@
+/* COLORS */
+/* ===== ===== ===== ===== ===== */
+
+$color-keys: (lala, green, blue, grey, orange);
+$colors: (#364F59, #73BF94, #F2ECD8, #A28023, #C64539);
+
+@each $color in $color-keys {
+
+	$i: index($color-keys, $color);
+    
+    .background-#{$color} {
+		@include Opacity(0.5);
+    	background-color: nth($colors, $i);
+    }
+   	.#{$color} {
+
+    	color: nth($colors, $i);
+    }
+}

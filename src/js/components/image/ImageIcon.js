@@ -22,9 +22,9 @@ var ImageIcon 	= React.createClass({
 
 		return (
 
-			<div className="icon col-xs-3 pull-right">
+			<div className="icon pull-right">
 				<img src={this.props.type + ".svg"} />
-				<p>{this.props.title}</p>
+				<p className="center-text">{this.props.title}</p>
 			</div>
 		)
 	}
